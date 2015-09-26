@@ -29,6 +29,10 @@ public class XMLInteraction {
 	private Document document;
 	private Element rootElement;
 	
+	public XMLInteraction(){
+		
+	}
+	
 	public void existingXml(String fileName,String rootTag) throws ParserConfigurationException, SAXException, IOException{
 		
 		
