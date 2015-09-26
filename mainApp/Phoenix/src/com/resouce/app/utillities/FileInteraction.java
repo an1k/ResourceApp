@@ -26,6 +26,13 @@ public class FileInteraction{
 		}
 
 		
+		
+		public FileInteraction(){
+			
+		}
+		
+		
+		
 		public String getFileString(File fileName) throws IOException{
 			
 		FileReader f=new FileReader(fileName);
