@@ -18,6 +18,10 @@ public class FileObject implements Serializable {
 		file=this.file;
 		
 	}
+	
+	public FileObject(String fileName){
+		this.file=new File(fileName);
+	}
 
 	public File getFile() {
 		return file;
