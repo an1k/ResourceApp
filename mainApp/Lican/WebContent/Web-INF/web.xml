@@ -3,14 +3,21 @@
   <display-name>AppProject</display-name>
   <welcome-file-list>
     <welcome-file>Login.jsp</welcome-file>
-  </welcome-file-list> 
+  </welcome-file-list>
   <servlet>
-        <servlet-name>Controller</servlet-name>
-        <servlet-class>app.controller.Controller</servlet-class>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>Controller</servlet-name>
-        <url-pattern>/Controller</url-pattern>
-    </servlet-mapping>
-  </web-app>
+    <servlet-name>UserController</servlet-name>
+    <servlet-class>app.controller.UserController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserController</servlet-name>
+    <url-pattern>/UserController</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  <servlet-name>FileUploadController</servlet-name>
+  <servlet-class>app.controller.FileUploadController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>FileUploadController</servlet-name>
+  <url-pattern>/FileUploadController</url-pattern>
+  </servlet-mapping>
+</web-app>
