@@ -11,7 +11,7 @@
 	<bean id="user" class="controller.User_bean"></bean>
 	<bean id="query" class="helper.HelperSqlQuery">
 	<property name="insertuser" 
-		value="insert into USER_102(User_name,password,phone_no,address) values (?,?,?,?)">
+		value="insert into USER(User_name,password,phone_no,address) values (?,?,?,?)">
 	</property>
 	</bean>
 	<bean id="connection" class="conn.Connect"></bean>
