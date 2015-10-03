@@ -5,7 +5,7 @@ import java.sql.SQLException;
 import com.resource.app.pojo.User;
 
 
-public interface QueryDao {
+public interface QueryDAO {
 	
 
 	public boolean insertData(User bean)throws ClassNotFoundException,
