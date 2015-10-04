@@ -66,7 +66,7 @@ public class FileUploadController extends HttpServlet {
 			                for(FileItem item : multiparts){
 			                    if(!item.isFormField()){
 			                        String name = new File(item.getName()).getName();  
-			                        System.out.println("UserFile " +name);
+			                        //System.out.println("UserFile " +name);
 			                       item.write( new File(path + File.separator + dir + File.separator + name));
 			                    }
 			                }
