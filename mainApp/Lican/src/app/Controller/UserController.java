@@ -55,7 +55,7 @@ public class UserController extends HttpServlet {
 		}
 		else
 		{
-			out.println("Password is Incorrect");
+			//out.println("Password is Incorrect");
 			RequestDispatcher view = request.getRequestDispatcher("Login.jsp");	
               view.forward(request, response);
 		}
@@ -64,7 +64,7 @@ public class UserController extends HttpServlet {
 	else
 		
 	{
-		System.out.println("Username is Incorrect ");
+		//System.out.println("Username is Incorrect ");
 		RequestDispatcher view = request.getRequestDispatcher("Login.jsp");
 		view.forward(request, response);
 
