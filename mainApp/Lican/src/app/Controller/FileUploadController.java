@@ -50,19 +50,24 @@ public class FileUploadController extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		File save_Dir = new File(dir);
+		String path=request.getServletContext().getRealPath("");
+
+		File save_Dir = new File(path + File.separator + dir);
+		System.out.println("Save Dir " +save_Dir);
 		if(!save_Dir.exists())
 		{
 			save_Dir.mkdir();
 			
+			System.out.println("Save Dir " +save_Dir);
 		}
 		if(ServletFileUpload.isMultipartContent(request)){
 			            try {
 			            	List<FileItem> multiparts = new ServletFileUpload(new DiskFileItemFactory()).parseRequest(request);
 			                for(FileItem item : multiparts){
 			                    if(!item.isFormField()){
-			                        String name = new File(item.getName()).getName();                   
-			                       item.write( new File(dir + File.separator + name));
+			                        String name = new File(item.getName()).getName();  
+			                        System.out.println("UserFile " +name);
+			                       item.write( new File(path + File.separator + dir + File.separator + name));
 			                    }
 			                }
 			            
