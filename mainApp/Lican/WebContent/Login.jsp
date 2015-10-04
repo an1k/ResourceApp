@@ -4,10 +4,12 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>Login</title>
 </head>
 <body>
-<Form action="/Lican/Controller" method="post">
+
+<Form action="/Lican/UserController" method="post">
+
 <table>
 <tr><td>UserName</td><td><input type="text" name="username"></td></tr><br>
 <tr><td>Password</td><td><input type="text" name="password"></td></tr><br>

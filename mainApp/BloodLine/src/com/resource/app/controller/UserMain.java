@@ -13,7 +13,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 
 
-import com.resource.app.DAO.QueryDao;
+import com.resource.app.DAO.QueryDAO;
 import com.resource.app.DAO.MainDAO;
 import com.resource.app.pojo.User;
 

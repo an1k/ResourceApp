@@ -6,6 +6,7 @@ import java.io.PrintWriter;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.MultipartConfig;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -14,14 +15,14 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class Controller
  */
-//@WebServlet("/Controller")
-public class Controller extends HttpServlet {
+//@WebServlet("/UserController")
+public class UserController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
     /**
      * Default constructor. 
      */
-    public Controller() {
+    public UserController() {
         // TODO Auto-generated constructor stub
     }
 
@@ -49,14 +50,14 @@ public class Controller extends HttpServlet {
 		if(password.equals("Amish"))
 		{
 			request.setAttribute("entry","Succed");
-			RequestDispatcher view = request.getRequestDispatcher("DashBoard.jsp");
+			RequestDispatcher view = request.getRequestDispatcher("index.jsp");
 			view.forward(request,response);
 		}
 		else
 		{
 			out.println("Password is Incorrect");
 			RequestDispatcher view = request.getRequestDispatcher("Login.jsp");	
-			view.forward(request, response);
+              view.forward(request, response);
 		}
 		
 	}
