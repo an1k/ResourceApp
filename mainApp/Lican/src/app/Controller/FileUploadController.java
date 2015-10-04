@@ -51,7 +51,7 @@ public class FileUploadController extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		String path=request.getServletContext().getRealPath("");
-
+			// HAVE to changed
 		File save_Dir = new File(path + File.separator + dir);
 		System.out.println("Save Dir " +save_Dir);
 		if(!save_Dir.exists())
