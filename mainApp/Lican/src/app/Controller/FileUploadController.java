@@ -26,7 +26,7 @@ import org.omg.CORBA.PRIVATE_MEMBER;
 @MultipartConfig(fileSizeThreshold=1024*1024*2,maxFileSize=1024*1024*10,maxRequestSize=1024*1024*50)
 public class FileUploadController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	private static final String dir = "D:/UploadFiles";
+	private static final String dir = "UploadedFiles";
 	private ServletFileUpload uploader = null;
        
     /**
