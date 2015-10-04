@@ -112,6 +112,11 @@ public class FileInteraction{
 		
 		public void createFile(String fileName,String stuff) throws IOException{
 			
+			File dir=new File("output_files");
+			
+			if(!dir.exists())
+				dir.mkdir();
+			
 			FileWriter fw=new FileWriter("output_files/"+fileName);
 			
 			fw.write(stuff);
